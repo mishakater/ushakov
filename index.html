@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="contact-us-popup-window hidden">
+      <div class="modal-form">
+        <div class="modal-content">
+          <img class="modal-close" src="./img/cross.svg" alt="close" />
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <section class="top-section">
+        <div class="top-content container">
+          <div class="contact-info">
+            <ul class="contact-info-items">
+              <li><img src="#" alt="" />example@example.com</li>
+              <li><img src="#" alt="" />м. Київ, вул. Ямська, 72</li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <a href="#"><img src="./img/facebook-icon.svg" alt="Facebook" /></a>
+            <a href="#"><img src="./img/insta-icon.svg" alt="Instagram" /></a>
+          </div>
+        </div>
+      </section>
+      <div class="header-content-wrapper">
+        <div class="header-content container">
+          <img class="logo" src="./img/logo.png" alt="logo" />
+          <div class="menu-wrapper">
+            <nav class="main-menu">
+              <ul>
+                <li><a href="#">ПРО НАС</a></li>
+                <li><a href="#">СФЕРИ ПРАКТИКИ</a></li>
+                <li><a href="#">ФАХІВЦІ</a></li>
+                <li><a href="#">КЛІЄНТИ</a></li>
+                <li><a href="#">КОНТАКТИ</a></li>
+              </ul>
+            </nav>
+            <a
+              href="tel:123-456-7890"
+              class="phone-link btn-phone-link btn-phone"
+            >
+              <div class="phone-container">
+                <svg
+                  id="color-change-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 256 256"
+                  xml:space="preserve"
+                >
+                  <defs></defs>
+                  <g
+                    class="svg-group"
+                    style="
+                      stroke: none;
+                      stroke-width: 0;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 10;
+                      fill-rule: nonzero;
+                      opacity: 1;
+                    "
+                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                  >
+                    <path
+                      id="colored-path"
+                      class="svg-path"
+                      d="M 38.789 51.211 l 10.876 10.876 c 0.974 0.974 2.471 1.194 3.684 0.543 l 13.034 -6.997 c 0.964 -0.518 2.129 -0.493 3.07 0.066 l 19.017 11.285 c 1.357 0.805 1.903 2.489 1.268 3.933 c -1.625 3.698 -4.583 10.476 -5.758 13.473 c -0.247 0.631 -0.615 1.209 -1.127 1.652 c -12.674 10.986 -37.89 -2.4 -57.191 -21.701 C 6.358 45.039 -7.028 19.823 3.958 7.149 c 0.444 -0.512 1.022 -0.88 1.652 -1.127 c 2.996 -1.175 9.775 -4.133 13.473 -5.758 c 1.444 -0.635 3.128 -0.089 3.933 1.268 l 11.285 19.017 c 0.558 0.941 0.583 2.106 0.066 3.07 L 27.37 36.651 c -0.651 1.213 -0.431 2.71 0.543 3.684 C 27.913 40.335 38.789 51.211 38.789 51.211 z"
+                      style="
+                        stroke: none;
+                        stroke-width: 1;
+                        stroke-dasharray: none;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        fill-rule: nonzero;
+                        opacity: 1;
+                      "
+                      transform="matrix(1 0 0 1 0 0)"
+                      stroke-linecap="round"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <span class="phone-number">+38 098 456 34 04</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="title-section container">
+        <h1>
+          <span class="title-top main-color">Адвокатська компанія</span>
+          <span class="title-bottom">Олександра Ушакова</span>
+        </h1>
+        <div class="title-section-buttons">
+          <a class="btn btn-main" href="#">Детальніше</a>
+          <a class="btn btn-main-contact" href="">Залишити заявку</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="services-section container">
+        <div class="service-item">
+          <div class="service-icon-wrapper">
+            <img class="service-icon" src="./img/icon-law-1.svg" alt="about" />
+          </div>
+          <h3 class="service-title">ПРО НАС</h3>
+          <p class="service-description">
+            Юридична компанія «Ушаков і Партнери» є компанією, що динамічно
+            розвивається та надає своїм клієнтам комплекс якісних юридичних
+            послуг у різних сферах юридичної практики.
+          </p>
+          <a class="service-more" href="">ДЕТАЛЬНІШЕ</a>
+        </div>
+        <div class="service-item center">
+          <div class="service-icon-wrapper">
+            <img class="service-icon" src="./img/icon-law-2.svg" alt="fields" />
+          </div>
+          <h3 class="service-title">СФЕРИ ПРАКТИКИ</h3>
+          <p class="service-description">
+            Судова практика Земельне право Корпоративне право Будівництво й
+            нерухомість Договірне й господарське право Банкрутство й
+            неспроможність Виконавче провадження...
+          </p>
+          <a class="service-more" href="">ДЕТАЛЬНІШЕ</a>
+        </div>
+        <div class="service-item">
+          <div class="service-icon-wrapper">
+            <img class="service-icon" src="./img/icon-law-3.svg" alt="team" />
+          </div>
+          <h3 class="service-title">ФАХІВЦІ</h3>
+          <p class="service-description">
+            Олександр Ушаков є керуючим партнером юридичної компанії «Ушаков і
+            Партнери». Закінчив Київський національний торгово-економічний
+            університет, а також Академію адвокатури України. Має ступінь
+            магістра права...
+          </p>
+          <a class="service-more" href="">ДЕТАЛЬНІШЕ</a>
+        </div>
+      </div>
+      <div class="main-contacts-wrapper">
+        <div class="main-contacts container">
+          <div class="main-contacts-left">
+            <h2 class="main-contacts-title">
+              ПРОФЕСІОНАЛІЗМ - <br /><span>ЗАПОРУКА УСПІХУ</span>
+            </h2>
+            <p class="main-contacts-description">
+              Професіоналізм, індивідуальний підхід та висока якість юридичних
+              послуг, які надаються спеціалістами нашої компанії, є запорукою
+              Вашого успіху
+            </p>
+          </div>
+
+          <div class="main-contacts-right">
+            <div class="main-contacts-item">
+              <div class="main-contacts-item-wrapper">
+                <img
+                  class="main-contacts-item-icon"
+                  src="./img/icon-office.svg"
+                  alt="office"
+                />
+              </div>
+              <div class="main-contacts-item-right">
+                <h3 class="main-contacts-item-title">НАШ ОФІС</h3>
+                <p class="main-contacts-item-description">
+                  м. Київ, вул. Ямська, 72
+                </p>
+              </div>
+            </div>
+            <div class="main-contacts-item">
+              <div class="main-contacts-item-wrapper">
+                <img
+                  class="main-contacts-item-icon"
+                  src="./img/icon-email.svg"
+                  alt="email"
+                />
+              </div>
+              <div class="main-contacts-item-right">
+                <h3 class="main-contacts-item-title">ЕЛЕКТРОННА ПОШТА</h3>
+                <div class="main-contacts-item-description">
+                  <ul class="main-contacts-item-description-list">
+                    <li>example@example.com</li>
+                    <li>example@example.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="main-contacts-item">
+              <div class="main-contacts-item-wrapper">
+                <img
+                  class="main-contacts-item-icon"
+                  src="./img/icon-phone.svg"
+                  alt="phone"
+                />
+              </div>
+              <div class="main-contacts-item-right">
+                <h3 class="main-contacts-item-title">ТЕЛЕФОНИ</h3>
+                <div class="main-contacts-item-description">
+                  <ul class="main-contacts-item-description-list">
+                    <li>+380734859175</li>
+                    <li>+380734859175</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="main-contacts-item">
+              <div class="main-contacts-item-wrapper">
+                <img
+                  class="main-contacts-item-icon"
+                  src="./img/schedule-icon.svg"
+                  alt="schedule"
+                />
+              </div>
+              <div class="main-contacts-item-right">
+                <h3 class="main-contacts-item-title">ГРАФІК РОБОТИ</h3>
+                <div class="main-contacts-item-description">
+                  <ul class="main-contacts-item-description-list">
+                    <li>Пн-Птн 9:00-18:00</li>
+                    <li>Сб 9:00-16:00</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="priorities">
+        <h2 class="priorities-title">Основні напрямки нашої діяльності</h2>
+        <div class="priorities-wrapper">
+          <div class="priorities-container">
+            <a href="#"
+              ><div class="priorities-item">
+                <span>СУДОВА ПРАКТИКА</span>
+                <div class="priorities-item-icon-wrapper">
+                  <img
+                    class="priorities-img"
+                    src="./img/icon-law-2.svg"
+                    alt="court"
+                  />
+                </div></div
+            ></a>
+            <a href="#"
+              ><div class="priorities-item">
+                <span>ЗЕМЕЛЬНЕ ПРАВО</span>
+                <div class="priorities-item-icon-wrapper">
+                  <img
+                    class="priorities-img"
+                    src="./img/house-icon.svg"
+                    alt="house"
+                  />
+                </div></div
+            ></a>
+            <a href="#"
+              ><div class="priorities-item">
+                <span>КОРПОРАТИВНЕ ПРАВО</span>
+                <div class="priorities-item-icon-wrapper-handshake">
+                  <img
+                    class="priorities-img-handshake"
+                    src="./img/corporate-icon.svg"
+                    alt="corporate"
+                  />
+                </div></div
+            ></a>
+            <a href="#"
+              ><div class="priorities-item">
+                <span>БУДІВНИЦТВО І НЕРУХОМІСТЬ</span>
+                <div class="priorities-item-icon-wrapper">
+                  <img
+                    class="priorities-img"
+                    src="./img/crane-icon.svg"
+                    alt="real estate"
+                  />
+                </div></div
+            ></a>
+          </div>
+          <div class="priorities-main-img">
+            <img src="./img/law-1.jpeg" alt="law" />
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <img class="about-portrait" src="" alt="" />
+        <div class="about-right">
+          <h2>ОЛЕКСАНДР УШАКОВ</h2>
+          <p>Є керуючим партнером юридичної компанії «Ушаков і Партнери».</p>
+          <a class="btn btn-main about-section-btn" href="#">Детальніше</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content container">
+        <div class="footer-column-1">
+          <img class="logo" src="./img/logo.png" alt="logo" />
+          <ul class="contacts-list">
+            <li>
+              <img src="./img/building-footer-icon.svg" alt="adress" />м. Київ,
+              вул. Ямська, 72
+            </li>
+            <li>
+              <img src="./img/phone-footer.svg" alt="phone" />+38 098 456 34 04
+            </li>
+            <li>
+              <img
+                src="./img/email-footer.svg"
+                alt="email"
+              />example@example.com
+            </li>
+          </ul>
+          <div class="footer-social">
+            <span>Наші соціальні мережі</span>
+            <div class="footer-social-items">
+              <a href=""
+                ><img src="./img/facebook-icon.svg" alt="Facebook"
+              /></a>
+              <a href=""><img src="./img/insta-icon.svg" alt="Instagram" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-column-list">
+          <span class="title">СФЕРИ ПРАКТИКИ</span>
+          <ul class="footer-column-list-items">
+            <li><a href="">Судова практика</a></li>
+            <li><a href="">Земельне право</a></li>
+            <li><a href="">Корпоративне право</a></li>
+            <li><a href="">Будівництво й нерухомість</a></li>
+            <li><a href="">Договірне й господарське право</a></li>
+            <li><a href="">Банкрутство і неспроможність</a></li>
+            <li><a href="">Виконавче провадження</a></li>
+            <li><a href="">Податкове право</a></li>
+            <li><a href="">Трудове право</a></li>
+            <li><a href="">Сімейне право</a></li>
+          </ul>
+        </div>
+        <div class="footer-column-list">
+          <span class="title">КОНТАКТИ</span>
+          <div class="footer-phones-wrapper">
+            <a
+              href="tel:123-456-7890"
+              class="phone-link btn-phone-link-footer btn-phone"
+              ><img class="phone-img" src="./img/phone.svg" alt="phone" />
+              <span class="phone-footer">+38 098 456 34 04</span></a
+            >
+            <a
+              href="tel:123-456-7890"
+              class="phone-link btn-phone-link-footer btn-phone"
+              ><img class="phone-img" src="./img/phone.svg" alt="phone" />
+              <span class="phone-footer">+38 098 456 34 04</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

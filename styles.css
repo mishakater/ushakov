@@ -1,0 +1,899 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top section styles */
+.top-section {
+  background-color: rgba(26, 23, 87, 0.8);
+}
+
+.top-content {
+  color: white;
+  font-family: "Lora", serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+}
+.contact-info > .contacts {
+  margin: 10px 0;
+}
+
+/* Contact info styles */
+.contact-info {
+  font-size: 0.8em;
+  margin-right: auto; /* Pushes social links to the right */
+}
+
+/* Social links styles */
+.social-links {
+  display: flex;
+}
+
+footer .contacts-list img {
+  width: 25px;
+}
+
+.social-links a {
+  margin-left: 10px;
+}
+
+.social-links a img {
+  margin-left: 10px;
+  width: 25px;
+}
+
+/* Header styles */
+.header {
+  background-color: #002346;
+  position: relative;
+  /* Set maximum header height */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px; /* Adjust padding to prevent content overflow */
+  max-height: 100px;
+}
+
+.header-content-wrapper {
+  background-color: #002346;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 100%;
+  z-index: 300;
+}
+.header-content-wrapper.sticky {
+  position: fixed;
+  top: 0;
+  /* Additional styling for the sticky menu */
+}
+.header-content-wrapper.visible {
+  transform: translateY(0);
+}
+
+.header-content-wrapper.menu-changed {
+  background-color: #fff !important;
+}
+
+.black {
+  color: black !important;
+}
+/* Logo styles */
+.logo {
+  width: 150px;
+}
+.main-menu {
+  padding: 30px 25px;
+  font-family: "Lora", serif;
+  font-weight: 500;
+}
+
+/* Main menu styles */
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: white;
+}
+.main-menu a.black {
+  color: black !important; /* Set your desired link color */
+}
+.btn-phone.black {
+  color: black !important;
+}
+/* Main content styles */
+.main {
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #808080;
+  color: #fff;
+  padding: 10px 0 30px 0;
+}
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lora", serif;
+  font-size: 14px;
+  gap: 10px;
+}
+.contacts-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+.footer-social span {
+  font-family: "Lora", serif;
+}
+.footer-column-1 {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.footer-social-items a img {
+  width: 30px;
+}
+.footer-social-items {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 120px;
+}
+.footer-column-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.footer-phones-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-column-list .title {
+  margin-top: 30px;
+  font-family: "Lora", serif;
+  font-size: 18px;
+}
+.footer-column-list-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  column-gap: 60px;
+  max-height: 200px;
+  flex-wrap: wrap;
+}
+.footer-column-list-items li a {
+  position: relative;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: white;
+}
+
+.list-wrapper {
+  max-height: 300px;
+}
+
+.footer-column-list-items li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: transparent; /* Set the initial background color to transparent */
+  bottom: -6px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Add background-color to the transition */
+}
+
+.footer-column-list-items li a:hover::before {
+  transform: scaleX(1);
+  background-color: rgb(
+    193,
+    157,
+    59
+  ); /* Change this color to your desired color */
+}
+
+.phone-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.phone-img {
+  width: 25px;
+}
+
+.phone-number {
+  font-family: "Lora", serif;
+}
+
+.phone-number::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: rgb(193, 157, 59);
+}
+
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.title-section {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 300px;
+  margin-bottom: 400px;
+  color: white;
+  font-family: "Lora", serif;
+}
+h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+h1 .title-top {
+  font-size: 30px;
+}
+h1 .title-bottom {
+  font-size: 55px;
+}
+
+.more-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.services-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  z-index: 100;
+  margin-top: -100px;
+  margin-bottom: 150px;
+}
+.service-item {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  width: 350px;
+  z-index: 100;
+  gap: 30px;
+  font-family: "Lora", serif;
+}
+.service-description {
+  text-align: center;
+  line-height: 25px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.service-more {
+  font-weight: 700;
+}
+.service-icon {
+  height: 70px;
+  width: 70px;
+}
+.service-icon-wrapper {
+  background-color: rgb(193, 157, 59);
+  padding: 4px;
+}
+.main-contacts-item-wrapper {
+  background-color: rgb(193, 157, 59);
+  padding: 8px;
+}
+.main-contacts-item-icon {
+  width: 50px;
+  height: 50px;
+}
+.service-item.center {
+  margin-top: -200px;
+}
+.main-contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: "Lora", serif;
+}
+.main-contacts-title {
+  font-size: 50px;
+  margin: 0 0 30px 0;
+}
+.main-contacts-title > span {
+  color: rgb(193, 157, 59);
+}
+
+.main-contacts-description {
+  font-size: 20px;
+}
+.main-contacts-left {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-contacts-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.main-contacts-item-title {
+  margin: 0;
+}
+.main-contacts-item-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-contacts-item-description {
+  margin: 0;
+}
+
+.main-color {
+  color: rgb(193, 157, 59);
+}
+
+.main-contacts-right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-right: 50px;
+}
+.main-contacts-item-description-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.contact-info-items > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-info-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 20px 0;
+  position: relative;
+  color: #ecf0f1;
+  width: fit-content;
+  z-index: 1;
+}
+
+.btn-phone-link {
+  display: inline-flex;
+  padding: 8px 16px;
+  margin: 20px 0;
+  position: relative;
+  color: #ecf0f1;
+  width: fit-content;
+  z-index: 1;
+}
+.btn-phone-link-footer {
+  display: inline-flex;
+  padding: 8px 16px;
+  position: relative;
+  color: #ecf0f1;
+  width: fit-content;
+  z-index: 1;
+}
+.btn-main {
+  border: 2px solid rgb(193, 157, 59);
+  color: white;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+.btn-main-contact {
+  border: 2px solid rgb(193, 157, 59);
+  color: white;
+  overflow: hidden;
+  background-color: rgb(193, 157, 59);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-main-contact:hover {
+  transform: scale(1.1); /* Increase the size by 10% */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+.btn-main:before,
+.btn-main:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+  background-color: rgb(193, 157, 59);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-main:after {
+  top: auto;
+  bottom: 50%;
+}
+
+.btn-main:hover:before {
+  height: 50%;
+}
+
+.btn-main:hover:after {
+  height: 50%;
+}
+
+.btn-phone {
+  border: 2px solid rgb(193, 157, 59);
+  color: white;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.btn-phone:before,
+.btn-phone:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+  background-color: rgb(193, 157, 59);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-phone:after {
+  top: auto;
+  bottom: 50%;
+}
+
+.btn-phone:hover:before {
+  height: 50%;
+}
+
+.btn-phone:hover:after {
+  height: 50%;
+}
+
+.priorities {
+  font-family: "Lora", serif;
+}
+
+.priorities-img {
+  width: 60px;
+  height: 60px;
+}
+.priorities-item-icon-wrapper {
+  background-color: rgb(193, 157, 59);
+  padding: 10px;
+}
+.priorities-img-handshake {
+  width: 70px;
+  height: 70px;
+}
+.priorities-item-icon-wrapper-handshake {
+  background-color: rgb(193, 157, 59);
+  padding: 5px;
+}
+.priorities-title {
+  text-align: center;
+  font-size: 50px;
+}
+.priorities-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 98px;
+}
+.priorities-container {
+  display: flex;
+  flex-direction: row;
+  row-gap: 60px;
+  column-gap: 40px;
+  max-width: 45%;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+.priorities-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 290px;
+  justify-content: end;
+  gap: 20px;
+  overflow-wrap: break-word;
+  font-weight: 600;
+}
+
+.priorities-item > span {
+  padding-top: 10px;
+  max-width: 147px;
+  line-height: 20px;
+}
+
+.priorities-main-img img {
+  top: 0; /* Position the image at the top */
+  right: 0; /* Position the image against the right side */
+  /* Make sure the image doesn't exceed viewport width */
+  max-width: 100%;
+}
+
+.main-menu ul li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: transparent; /* Set the initial background color to transparent */
+  bottom: -6px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Add background-color to the transition */
+}
+
+.main-menu ul li a:hover::before {
+  transform: scaleX(1);
+  background-color: rgb(
+    193,
+    157,
+    59
+  ); /* Change this color to your desired color */
+}
+
+.main-menu ul li a {
+  position: relative;
+  text-decoration: none;
+}
+
+.main-menu ul li a:hover {
+  text-decoration: none;
+}
+
+.priorities-item span {
+  position: relative;
+}
+.priorities-item span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: transparent; /* Set the initial background color to transparent */
+  bottom: -6px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Add background-color to the transition */
+}
+
+.priorities-item span:hover::before {
+  transform: scaleX(1);
+  background-color: rgb(
+    193,
+    157,
+    59
+  ); /* Change this color to your desired color */
+}
+
+.main-contacts-wrapper {
+  width: 100%;
+  background-color: #002346;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.about-right {
+  max-width: 50%;
+}
+.about-portrait {
+  width: 50%;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  background-color: #002346;
+  color: white;
+  font-family: "Lora", serif;
+}
+.about-right h2 {
+  margin-top: 100px;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.about-right p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.about-section-btn {
+  margin-bottom: 100px;
+}
+
+.service-more {
+  position: relative;
+}
+.service-more::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: transparent; /* Set the initial background color to transparent */
+  bottom: -6px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Add background-color to the transition */
+}
+
+.service-more:hover::before {
+  transform: scaleX(1);
+  background-color: rgb(
+    193,
+    157,
+    59
+  ); /* Change this color to your desired color */
+}
+
+.service-title {
+  font-weight: 600;
+  font-size: 20px;
+}
+/* Style for the scrolled navigation menu */
+.background-white {
+  background-color: white !important;
+}
+
+.svg-path {
+  fill: white; /* Default color, can be changed */
+}
+
+.svg-path.black {
+  fill: black !important; /* Red color, can be changed */
+}
+.contact-us-popup-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Change opacity and color as needed */
+  z-index: 1000; /* Ensure the overlay is on top */
+  /* display: none; */
+}
+
+.modal-form {
+  width: 550px;
+  height: 350px;
+  background-color: #fff;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+}
+.contact-us-popup-window.hidden {
+  display: none;
+}
+
+.title-section-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.modal-content {
+  position: relative;
+}
+.modal-close {
+  width: 35px;
+  position: absolute;
+  top: 25px;
+  right: 5%;
+  cursor: pointer;
+}
